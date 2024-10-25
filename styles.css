@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela cheia */
+}
+
+.container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    position: relative; /* Para posicionar as setas corretamente */
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden; /* Esconde as imagens que não devem aparecer */
+}
+
+.image-column {
+    min-width: 200px; /* Largura mínima das colunas */
+    margin: 0 10px; /* Espaçamento entre as colunas */
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Borda arredondada opcional */
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
